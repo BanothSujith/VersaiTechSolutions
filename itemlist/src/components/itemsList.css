@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .items-list {
+    position: absolute;
+    top: 0;
+    right:1px;
+    width:23%; 
+    height:100%;
+    overflow:hidden;
+    padding: 0 1em;
+    border-radius: 5px;
+    box-shadow: -1px 0 0px #cfcfcf;
+    margin: 0 ,.2em;
+    text-transform: uppercase;
+    background-color: #fff;
+
+  }
+  @media  (max-width:450px) {
+    .items-list {
+      width:99%;
+    }
+    
+  }
+  
+  .orderid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .6em .5em .2em 2px;
+    border-bottom: 1px solid #ddd;    
+  }
+
+  .guess-table {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 1em 1em .2em 1em;
+
+  }
+  
+  .items-header {
+    border-bottom: 1px dotted black;
+    height:15vh;
+
+  }
+  
+  .order {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin:0 .3em;
+  }
+
+  .orderID{
+    margin-right:.2em;
+  }
+ 
+  .items-layout{
+    height:65vh;
+    overflow: auto;
+  }
+  .items-layout::-webkit-scrollbar {
+    display: none; 
+  }
+  .no-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+ 
+  
+  .no-items{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .item-card {
+    margin-bottom: 1em;
+  }
+  
+  .items-footer {
+    position: sticky;
+    border: 1px dotted black;
+    bottom: .5em;
+    border-radius: 5px 5px  0 0;
+    background-color:rgba(237, 238, 239, 0.776) ;
+  }
+  
+
+  
+.bill p{
+  display: flex;
+justify-content: space-between;
+align-items: flex-end;
+row-gap: 1.5em;
+padding: .1em .3em ;
+}
+.bill p > span:first-child{
+  flex-basis: 40%;
+
+}
+
+.totalBill{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:1em;
+  border-top: 1px solid black ;
+}

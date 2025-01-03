@@ -1,0 +1,96 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.ButtonsFun{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+} 
+.ButtonsFun-btn{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0 1em 0;
+}
+.ButtonsFun-btn button{
+    width: 50%;
+    height:auto;
+    padding: .6em .1em;
+    border:1px solid rgba(255, 255, 255, 0.893);
+    border-radius: 5px;
+   cursor: pointer;
+   margin:0 1em;
+   
+}
+
+
+.total{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:.3em 1em .4em 1em ;
+    text-transform: uppercase;
+}
+.ButtonsFun-btn button:first-child{
+    background-color: #58d86ba3;
+    transition: all 1s ease-out;
+    animation:glowingGreen 2s infinite ease-in-out;
+
+}
+.ButtonsFun-btn button:last-child{
+    background-color: #fe0a0aa3;
+    transition: all .1s ease-out;
+    animation:glowingRed 2s infinite ease-in-out;
+}
+
+.ButtonsFun button:hover {
+    animation: none;
+    filter:opacity(.8);
+}
+ 
+.otpInput{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    text-align: center;
+}
+.otpInput p:first-child{
+    padding: 1em 0 1em 0;
+    font-size: .8em;
+    color:rgb(23, 158, 255)
+}
+.otpInput p:last-child{
+    color:red;
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+.otp-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .1em 0 .5em 0 ;
+}
+
+.otp-box-container input{
+    width: 2em;
+    height: 3em;
+    text-align: center;
+    margin: 0 .5em;
+    border: 1px solid rgb(15, 183, 169);
+    border-radius: 5px;
+    background-color: rgba(212, 254, 250, 0.753);
+}
+.otp-box-container input:focus{
+    border:2px solid rgba(126, 214, 238, 0.932);
+    outline: none;
+}
+
+.error-message{
+    color: red;
+    text-transform: capitalize;
+}
+
