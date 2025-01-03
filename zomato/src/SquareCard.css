@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.SquareCard {
+    padding: 0.3em;
+    border-radius: 20px;
+    transition: 0.3s ease; 
+}
+
+.SquareCard:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.SquareCard img {
+    width:15em;
+    margin: 0.1em auto;
+    padding-top: 0.3em;
+    height:12em;
+    border-radius: 25px;
+}
+.description{
+    display: flex;
+    justify-content:space-between;
+}
+.squareCard-datails {
+    display: flex;
+    flex-basis: 90%;
+    flex-direction: column;
+    gap: 0.02em;    
+}
+
+.squareCard-datails h3 {
+    padding: 0.1em;
+    font-size: 1.4em;
+}
+
+.squareCard-datails p {
+    padding: 0.1em;
+    font-size: 1em;
+    width:3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.cartb {
+    display: flex; 
+    flex-basis: 10%;
+    justify-content: flex-end; 
+    width: 100%;
+    padding: 0.5em 2em 0 0;
+}
+
+.cartb button {
+    padding: 1em 2em;
+    width: auto;
+    font-size: 1em;
+    height: 3em;
+    display: inline-flex;
+    justify-content:flex-end;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cartb button:hover {
+    background-color: rgb(230, 230, 230);
+}
+@media (min-width:595px) and (max-width:768px){
+    .SquareCard img {
+        width:12em;
+        margin: 0.1em auto;
+        padding-top: 0.3em;
+        height:12em;
+        border-radius: 25px;
+    }
+}
+@media (max-width: 595px) {
+    .SquareCard {
+       display:flex;
+       height: 8em;
+       width:20em;
+       gap:1em;
+       margin:.1em;
+    }
+    .SquareCard img {
+        width:7em;
+        margin: 0 auto;
+        padding-top: 0.1em;
+        height:7em;
+        border-radius: 50%;
+    }
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.squareCard-datails{
+    justify-content:flex-start;
+
+}
+.squareCard-datails h3 {
+    padding: 0.1em;
+}
+
+.squareCard-datails p {
+    padding: 0.1em;
+    width:10em;
+}
+
+.cartb {
+    display: flex; 
+    justify-content:center;
+    align-items: center; 
+    width:fit-content;
+    padding-top:0;
+    padding: .1em;
+}
+
+.cartb button {
+    padding: 1em;
+    margin-left: 3em;
+    width:fit-content;
+    height: 1em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+}

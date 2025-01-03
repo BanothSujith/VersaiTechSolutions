@@ -1,0 +1,38 @@
+.circularCard{
+display: flex;
+flex-wrap: nowrap;
+height: fit-content;
+overflow-x: auto;
+}
+
+.circularCard::-webkit-scrollbar {
+    height:0;
+}
+
+.scroll-button {
+    background-color: rgba(243, 241, 241, 0.425);
+    backdrop-filter: blur(10px);
+    border: none;
+    cursor: pointer;
+    padding: 0.5em .5em;
+    font-size: 1.2em;
+  }
+  
+  .scroll-button.left {
+    position:absolute;
+    border-radius: 0 20px 20px 0;
+    left: 0;
+    top: 0%;
+    transform: translateY(170%);
+    z-index: 1;
+  }
+  
+  .scroll-button.right {
+    position: absolute;
+    border-radius: 20px 0 0 20px;
+    right: 0;
+    top: 0%;
+    transform: translateY(170%);
+    z-index: 1;
+  }
+  

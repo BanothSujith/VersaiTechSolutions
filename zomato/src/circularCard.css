@@ -1,0 +1,31 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.CircularCard{
+    margin: 1em;
+    max-width: 30em;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+}
+
+
+.CircularCard img{
+width: 10em;
+height:auto;
+aspect-ratio: 4/4;
+border-radius: 50%;
+}
+
+.CircularCard h3{
+    padding:.3em;
+    text-align: center;
+
+}
+
