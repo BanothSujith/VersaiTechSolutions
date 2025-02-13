@@ -1,11 +1,11 @@
 import Pin from "./components/Pin.jsx";
-import Card from "./components/Card.jsx";
-import SideList from "./components/SideList.jsx";
-import Menu from "./components/Menu.jsx";
-import ItemDescrption from "./components/ItemDescrption.jsx";
+import Card from "./components/menu/Card.jsx";
+import SideList from "./components/sideStatus/SideList.jsx";
+import Menu from './components/menu/Menu.jsx';
+import OrderList from './components/orderList/OrderList.jsx';
 function App() {
   return (
-    <div className=" h-full w-full">
+    <div className=" h-screen w-full bg-gray-950">
       {/* <Pin />
       {list.map((item, i) => (
         <div key={i}>
@@ -17,7 +17,8 @@ function App() {
 
       {/* <SideList /> */}
       <Menu/> 
-{/* <ItemDescrption/> */}
+
+{/* <OrderList/> */}
     </div>
   );
 }

@@ -191,7 +191,6 @@ function SideList() {
     }
   };
   const handleConfirm = () => {
-    // Remove the item if confirmed
     setCardData((prevData) =>
       prevData.filter((item) => item.id !== popupState.itemId)
     );
@@ -199,7 +198,6 @@ function SideList() {
   };
 
   const handleCancel = () => {
-    // Close the popup without changes
     setPopupState({ isOpen: false, itemId: null });
   };
 

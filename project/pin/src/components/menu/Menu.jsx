@@ -367,19 +367,19 @@ const [itemId, setItemId] = useState(null);
   const scrollContainerRef = useRef(null);
 
   const selectedItemIndex = foodItems.findIndex((item) => item.id === itemId);
-  console.log(selecteditem);
-console.log(itemId);
-console.log(selectedItemIndex);
+//   console.log(selecteditem);
+// console.log(itemId);
+// console.log(selectedItemIndex);
   const handleScroll = (event) => {
     event.preventDefault();
     scrollContainerRef.current.scrollLeft += event.deltaY * 0.5;
   };
   const categories = [...new Set(foodItems.map((item) => item.category))];
   return (
-    <div>
+    <div className="w-full h-full ">
       {selecteditem ? (
-        <div className="w-full h-full ">
-        <ItemDescription setSelecteditem={setSelecteditem} item={filterItems[selectedItemIndex]}/>
+        <div className="w-full h-screen bg-red-600 ">
+        <ItemDescription setSelecteditem={setSelecteditem} setFilterItems={setFilterItems} item={filterItems[selectedItemIndex]}/>
         </div>
       ) : (
         <div className="relative p-1 bg-[#f4f4f4] w-full h-full max-h-[70rem] max-w-[51.438rem]">
@@ -419,7 +419,6 @@ console.log(selectedItemIndex);
                 className="bg-[#d9d9d9] max-h-14   h-14 rounded-xl w-[12.109rem] uppercase hover:bg-[#4a5c2f] transition-all duration-100 hover:text-white"
                 onClick={() => {
                   setFilterItems(foodItems);
-                  setIsActive(true);
                 }}
               >
                 All
@@ -432,7 +431,7 @@ console.log(selectedItemIndex);
             ))}
           </div>
           </div>
-          <div className="flex flex-wrap gap-4 h-screen max-h-[50.5rem] overflow-auto hide-scrollbar">
+          <div className="flex flex-wrap gap-4 h-full max-h-[50.5rem] overflow-auto hide-scrollbar mt-3">
             {filterItems.map((item) => (
               <Card key={item.id} item={item} setSelecteditem={setSelecteditem} setItemId={setItemId} />
             ))}
