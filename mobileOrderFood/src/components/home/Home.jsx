@@ -224,7 +224,7 @@ function Home() {
       </div>
       <div
         className="min-h-[13rem]  flex gap-4 overflow-auto"
-        ref={increaseSizeRef}
+        // ref={increaseSizeRef}
       >
         {Array.from({ length: 8 }).map((_, i) => (
           <div
