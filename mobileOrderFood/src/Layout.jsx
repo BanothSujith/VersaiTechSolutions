@@ -32,7 +32,7 @@ function Layout() {
     <BrowserRouter>
 
     <div className='flex flex-col h-full w-full'>
-        <div className='overflow-auto'>
+        <div className='overflow-auto hidescrollbar'>
         <Routers/>
 
         </div>
