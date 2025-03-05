@@ -4,3 +4,6 @@
 .font-sora {
   font-family: "Sora", sans-serif;
 }
+.hide-scrollbar{
+  scrollbar-width: none;
+}
