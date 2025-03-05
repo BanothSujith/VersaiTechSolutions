@@ -10,6 +10,7 @@ import img1 from "../assets/1.png";
 import img2 from "../assets/2.png";
 import img3 from "../assets/3.png";
 import Review from "./Review";
+import { useNavigate } from "react-router-dom";
 const aboutdata = [
   {
     heading: "60 MILLION",
@@ -71,7 +72,7 @@ const services = [
 const colors = ["#26268e", "#1f1f7c", "#191974"];
 function AboutUs() {
   const [showScroll, setShowScroll] = useState(false);
-
+  const navigate = useNavigate();
   const handleScroll = () => {
     setShowScroll(window.scrollY > 300);
   };
@@ -97,7 +98,7 @@ function AboutUs() {
             </p>
           </div>
           <div className="flex gap-4 items-center py-6 text-white">
-            <span>Home</span>
+            <span onClick={()=>navigate("/")}>Home</span>
             <span>-</span>
             <span>About Us</span>
           </div>

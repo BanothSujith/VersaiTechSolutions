@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className='w-full h-screen font-sora'>
-       {/* <AboutUs/> */}
-       <Contact/>
+       <AboutUs/>
+       {/* <Contact/> */}
        {/* <Logos/> */}
     </div>
   )

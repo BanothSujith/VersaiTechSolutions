@@ -5,6 +5,7 @@ import { MdMail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import Logos from "./Logos";
 import { FaArrowUp } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 
 const contactInfo = [
   {
@@ -36,7 +37,6 @@ function Contact() {
     question: "",
   });
   const [showScroll, setShowScroll] = useState(false);
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -62,7 +62,7 @@ function Contact() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-18">
+    <div className="flex flex-col md:gap-18">
       <div className="relative w-full min-h-[60vh] lg:h-[95vh]">
         <img
           src={bgForAbout}
@@ -79,14 +79,14 @@ function Contact() {
             </p>
           </div>
           <div className="flex gap-4 items-center py-6 text-white">
-            <span>Home</span>
+            <Link to="\">Home</Link>
             <span>-</span>
             <span>Contact Us</span>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-evenly gap-18 md:gap-1 md:gap-y-16 py-20">
+      <div className="flex flex-wrap justify-evenly gap-18 md:gap-1 md:gap-y-16 pt-20">
         {contactInfo.map((item, i) => (
           <div
             className="relative py-18 px-12 border border-[#d1d1d1] rounded-4xl flex flex-col gap-1 w-96 transition-all duration-1000 ease-in-out hover:bg-[#26268e] hover:text-white text-[#555]"
@@ -120,7 +120,7 @@ function Contact() {
         <div className="w-full lg:w-1/2 aspect-square border rounded-3xl text-center">
           <iframe
             title="NIMS University Jaipur Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.1780713500454!2d75.64459597534817!3d27.151789150377246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dbf8e5bf1f3a3%3A0xbca0e02c841c4db8!2sNIMS%20University%20Rajasthan!5e0!3m2!1sen!2sin!4v1710194567890!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.8140619879628!2d75.95530149999999!3d27.193580200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d09d29fda6413%3A0xeff4b5cb1ce3e35a!2sNIMS%20University!5e0!3m2!1sen!2sin!4v1741164944204!5m2!1sen!2sin"
             width="100%"
             height="100%"
             className="rounded-3xl "
@@ -128,6 +128,7 @@ function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
+        
         </div>
         <div className="w-full lg:w-1/2">
           <form
