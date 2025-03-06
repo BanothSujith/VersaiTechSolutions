@@ -2,6 +2,7 @@ import { useState } from 'react'
 import AboutUs from './components/AboutUs'
 import Contact from './components/Contact'
 import Logos from './components/Logos'
+import Review from './components/Test'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
        <AboutUs/>
        {/* <Contact/> */}
        {/* <Logos/> */}
+       <Review/>
     </div>
   )
 }

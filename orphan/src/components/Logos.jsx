@@ -65,6 +65,7 @@ const Logos = () => {
         <img
           key={i}
           src={logo}
+          draggable="false"
           className="min-w-64 aspect-video grayscale transition-all duration-300 ease-in hover:grayscale-0"
         />
       ))}
