@@ -2,8 +2,7 @@ import { useState } from 'react'
 import AboutUs from './components/AboutUs'
 import Contact from './components/Contact'
 import Logos from './components/Logos'
-import Review from './components/Test'
-
+import Review from './components/Review'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +12,7 @@ function App() {
        <AboutUs/>
        {/* <Contact/> */}
        {/* <Logos/> */}
-       <Review/>
+       {/* <Review/> */}
     </div>
   )
 }

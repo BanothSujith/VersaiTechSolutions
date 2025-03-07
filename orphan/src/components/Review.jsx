@@ -63,18 +63,21 @@ const Review = () => {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          centerMode:false,
+          slidesToScroll: 1,
+          initialSlide:1,
         },
       },
     ],
   };
 
   return (
-    <div className="flex flex-col gap-6 items-center justify-center py-10 w-full">
-      <Slider {...settings} className="w-[90%] md:w-[55%]">
+    <div className="flex flex-col gap-6 items-center justify-center py-10 w-full overflow">
+      <Slider {...settings} className=" w-24 md:w-full  lg:w-[55%]">
         {reviews.map((item, i) => (
           <div key={i} className="flex flex-col items-center py-5">
             <div
-              className={`relative w-20 h-20 md:w-20 md:h-20 rounded-full overflow-hidden transition-all duration-300 ${
+              className={`relative w-20 mx-2 md:mx-0 h-20 md:w-20 md:h-20 rounded-full overflow-hidden transition-all duration-300 ${
                 i === centerIndex ? "scale-110" : ""
               }`}
             >
